@@ -8,6 +8,7 @@
         'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
     outline: none;
+
 }
 
 :root {
@@ -16,7 +17,6 @@
 
 .wrapper {
     display: flex;
-
     flex-direction: column;
     align-items: center;
 }
@@ -25,8 +25,6 @@
     max-width: 1200px;
     margin-bottom: 10px;
 }
-
-
 
 .nav {
     height: 80px;
@@ -62,10 +60,12 @@
 .main {
     display: flex;
     overflow: hidden;
-    height: 70vh;
+    height: 50vh;
     align-items: center;
     flex-direction: column;
-    margin-top: 83px
+    margin-top: 83px;
+    margin-bottom: 40px;
+
 }
 
 .main_header {
@@ -121,10 +121,89 @@
 
 }
 
+.case {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_header {
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 300;
+
+}
+
+.case_box {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.case_item {
+    margin: 20px;
+    height: max-content;
+}
+
+.buttom_case_item {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 65px;
+    position: relative;
+    top: -193px;
+    left: 59px;
+    background-color: white;
+}
+
+.buttom_text {
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.case_item:hover .buttom_text {
+    display: none;
+
+}
+
+.case_item:hover .case_item_img {
+    transform: scale(1.15);
+    transition: .5s;
+
+}
+
+.case_item:hover .buttom_case_item {
+    transform: scale(1.15);
+    transition: .5s;
+}
+
+.case_item:hover .hidden {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: rgba(133, 6, 6, 0.764);
+    transition: .5s;
+}
+
 .prelim {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 60px; */
+
 }
 
 
