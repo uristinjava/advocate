@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+:root {
+    --index: calc(1vw + 1vh);
+}
+
+.wrapper {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    max-width: 1200px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav {
+    height: 80px;
+    margin-top: 40px;
+}
+
+.nav_menu {
+    display: flex;
+    justify-content: center;
+
+}
+
+.tytle_menu {
+    padding: 40px;
+    display: block;
+}
+
+.text_navigator {
+    color: black;
+    font-size: calc(var(--index)*0.9);
+    text-transform: capitalize;
+    display: block;
+}
+
+.text_navigator:hover {
+    border-bottom: 3px solid rgba(156, 58, 58, 0.764);
+    color: rgba(133, 6, 6, 0.764);
+    transform: scale(1.1);
+    transition: .2s;
+
+}
+
+.main {
+    display: flex;
+    overflow: hidden;
+    height: 70vh;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 83px
+}
+
+.main_header {
+    letter-spacing: 12px;
+    font-size: calc(var(--index)*3);
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.main_header span {
+    display: block;
+    font-size: calc(var(--index)*.7);
+    margin-top: 5px;
+}
+
+.shelf_books_conteiner {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.shelf_books {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 600px;
+
+}
+
+.sh {
+    margin-top: -10px;
+    background-color: gray;
+    box-shadow: -2px 8px 27px -1px darkgrey;
+    margin-bottom: 15px;
+    border-top: 11px solid #D3D3D3;
+    z-index: 1;
+    border-radius: 3px;
+    width: 300px;
+}
+
+.shelf_books_link {
+    opacity: 0.8;
+    display: block;
+
+}
+
+.shelf_books_link:hover {
+    filter: brightness(150%);
+    opacity: 1;
+    transform: scale(1.1);
+    transition: .5s;
+
+}
+
+.prelim {
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 60px; */
+}
+
+
+.prilim_cabinet {
+
+    background-image: url(img/cabinetColomn.png);
+    background-repeat: no-repeat;
+    opacity: 0.8;
+    width: 1200px;
+    height: 79vh;
+    background-position: center;
+    background-size: contain;
+}
