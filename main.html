@@ -9,11 +9,19 @@
 
     <link rel="stylesheet" href="main.css">
     <script src="main.js" defer></script>
+
+    <style>
+        .loader,
+        .main_header {
+            opacity: 0;
+        }
+    </style>
+
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header loader">
             <nav class="nav">
                 <ul class="nav_menu">
                     <li class="tytle_menu"> <a class="text_navigator" href="#"> контакты</a> </li>
@@ -25,24 +33,25 @@
         </header>
 
         <main class="main">
-            <div class="shelf_books_conteiner">
+            <div class="shelf_books_conteiner loader">
                 <div class="shelf_books">
-                    <a href="#" class="shelf_books_link"><img src="img/1book.png" width="60px" alt=""></a>
-                    <a href="#" class="shelf_books_link"><img src="img/2book.png" width="60px" alt=""></a>
-                    <a href="#" class="shelf_books_link"><img src="img/1book.png" width="60px" alt=""></a>
-                    <a href="#" class="shelf_books_link"><img src="img/4books.png" width="60px" alt=""></a>
-                    <a href="#" class="shelf_books_link"><img src="img/5books.png" width="37px" alt=""></a>
+                    <a href="#" class="shelf_books_link"><img src="img/1book.png" width="58px" alt=""></a>
+                    <a href="#" class="shelf_books_link"><img src="img/2book.png" width="58px" alt=""></a>
+                    <a href="#" class="shelf_books_link"><img src="img/1book.png" width="58px" alt=""></a>
+                    <a href="#" class="shelf_books_link"><img src="img/4books.png" width="55px" alt=""></a>
+                    <a href="#" class="shelf_books_link"><img src="img/5books.png" width="35px" alt=""></a>
                 </div>
 
-                <div class="sh"></div>
+                <div class="sh loader"></div>
             </div>
-            <h1 class="main_header">АдвокатЪ
-                <!-- <span>Loading...</span></h1> -->
+
+            <h2 class="preloader_first">Здравствуйте, Я - Ваш</h2>
+            <h1 class="main_header">АдвокатЪ</h1>
         </main>
 
-        <div class="case">
+        <div class="case loader">
 
-            <h3 class="item_header"> не верьте обещаниям, <br> стротрите дела </h3>
+            <h3 class="item_header"> не верьте словам, <br> верьте делам </h3>
 
             <div class="case_box">
 
@@ -98,7 +107,7 @@
 
         </div>
 
-        <div class="prelim">
+        <div class="prelim loader">
             <div class="prilim_cabinet">
 
             </div>
@@ -106,7 +115,7 @@
         </div>
 
 
-        <footer class="footer">
+        <footer class="footer loader">
             <nav class="nav">
                 <ul class="nav_menu">
                     <li class="tytle_menu"> <a class="text_navigator" href="#"> контакты</a> </li>
