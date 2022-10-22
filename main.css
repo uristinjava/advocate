@@ -67,10 +67,12 @@
 }
 
 .main_header {
+    display: block;
     letter-spacing: 12px;
     font-size: calc(var(--index)*3);
     font-weight: 300;
     text-align: center;
+    /* filter: brightness(50%); */
 }
 
 .preloader_first {
@@ -227,15 +229,16 @@
 
 .loaded .loader {
     opacity: 1;
-    transition: opacity 15s;
+    transition: opacity 10s;
 }
 
 .loaded .main_header {
     opacity: 1;
-    transition: opacity 1s;
+    transition: opacity .1s;
+    opacity: 0.8;
 }
 
 .loaded .preloader_first {
     opacity: 0;
-    transition: opacity 1s;
+    transition: opacity 1.8s;
 }
