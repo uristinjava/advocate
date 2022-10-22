@@ -8,7 +8,6 @@
         'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
     outline: none;
-
 }
 
 :root {
@@ -22,7 +21,7 @@
 }
 
 .header {
-    max-width: 1200px;
+    max-width: calc(var(--index)*120);
     margin-bottom: 10px;
 }
 
@@ -59,10 +58,9 @@
 .main {
     display: flex;
     overflow: hidden;
-    /* height: 50vh; */
+    height: 62vh;
     align-items: center;
     flex-direction: column;
-    margin-top: 83px;
     margin-bottom: 40px;
 }
 
@@ -200,6 +198,43 @@
     transition: .5s;
 }
 
+.promo {
+    margin-bottom: 10px;
+
+    /* height: 100vw; */
+}
+
+.promo_box {
+    display: flex;
+    max-width: calc(var(--index)*150);
+    height: 80vh;
+    padding-top: 20px;
+    margin-top: 40px;
+}
+
+.promo_article {
+    margin-left: 40px;
+    font-size: calc(var(--index)*.6)
+}
+
+.promo_header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: calc(var(--index)*.8);
+}
+
+.promo_photo {
+    width: 300px;
+}
+
+.promo_text {
+    max-width: 300px;
+    margin-top: 15px;
+    border-bottom: 3px solid gray;
+    opacity: 0.8;
+    padding-bottom: 6px;
+}
+
 .prelim {
     display: flex;
     justify-content: center;
@@ -221,15 +256,45 @@
     .prilim_cabinet {
         display: none;
     }
+
+    .promo_box {
+        flex-direction: column-reverse;
+    }
+
+    .promo_article {
+        margin: 0;
+    }
+
+
+
+    .main {
+        display: flex;
+        overflow: hidden;
+        height: 73vh;
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+
+    .preloader_first {
+        text-align: center;
+    }
+
+    .map_box {
+        flex-direction: column;
+    }
+
+
 }
 
 .loader {
-    transition: opacity 15s;
+    transition: opacity 10s;
 }
 
 .loaded .loader {
     opacity: 1;
     transition: opacity 10s;
+    margin-bottom: 30px;
 }
 
 .loaded .main_header {
@@ -238,7 +303,21 @@
     opacity: 0.8;
 }
 
+
+
 .loaded .preloader_first {
     opacity: 0;
     transition: opacity 1.8s;
+}
+
+@media (min-width: 1400px) {
+    .loaded .loader {
+
+        margin-bottom: 16px;
+    }
+}
+
+.map_box {
+    max-width: 600px;
+    display: flex;
 }
