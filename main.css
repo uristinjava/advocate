@@ -8,6 +8,7 @@
         'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
     outline: none;
+
 }
 
 :root {
@@ -16,7 +17,6 @@
 
 .wrapper {
     display: flex;
-
     flex-direction: column;
     align-items: center;
 }
@@ -26,34 +26,31 @@
     margin-bottom: 10px;
 }
 
-
-
 .nav {
     height: 80px;
-    margin-top: 40px;
+    max-width: calc(var(--index)*120);
 }
 
 .nav_menu {
     display: flex;
     justify-content: center;
-
 }
 
 .tytle_menu {
-    padding: 40px;
+    padding: calc(var(--index)*1);
     display: block;
 }
 
 .text_navigator {
     color: black;
-    font-size: calc(var(--index)*0.9);
+    font-size: calc(var(--index)*0.8);
     text-transform: capitalize;
     display: block;
 }
 
 .text_navigator:hover {
-    border-bottom: 3px solid rgba(156, 58, 58, 0.764);
-    color: rgba(133, 6, 6, 0.764);
+    border-bottom: 3px solid rgba(216, 11, 11, 0.971);
+    color: rgba(216, 11, 11, 0.971);
     transform: scale(1.1);
     transition: .2s;
 
@@ -62,10 +59,11 @@
 .main {
     display: flex;
     overflow: hidden;
-    height: 70vh;
+    /* height: 50vh; */
     align-items: center;
     flex-direction: column;
-    margin-top: 83px
+    margin-top: 83px;
+    margin-bottom: 40px;
 }
 
 .main_header {
@@ -73,7 +71,13 @@
     font-size: calc(var(--index)*3);
     font-weight: 300;
     text-align: center;
+}
 
+.preloader_first {
+    letter-spacing: 12px;
+    font-size: calc(var(--index)*1.5);
+    font-weight: 300;
+    text-align: center;
 }
 
 .main_header span {
@@ -85,7 +89,6 @@
 .shelf_books_conteiner {
     display: flex;
     flex-direction: column;
-
 }
 
 .shelf_books {
@@ -93,11 +96,10 @@
     justify-content: center;
     align-items: center;
     max-width: 600px;
-
 }
 
 .sh {
-    margin-top: -10px;
+    margin-top: -6px;
     background-color: gray;
     box-shadow: -2px 8px 27px -1px darkgrey;
     margin-bottom: 15px;
@@ -110,7 +112,6 @@
 .shelf_books_link {
     opacity: 0.8;
     display: block;
-
 }
 
 .shelf_books_link:hover {
@@ -118,23 +119,123 @@
     opacity: 1;
     transform: scale(1.1);
     transition: .5s;
+}
 
+.case {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.item_header {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 3px;
+    font-weight: 300;
+}
+
+.case_box {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.case_item {
+    margin: 20px;
+    height: max-content;
+}
+
+.buttom_case_item {
+    display: flex;
+    align-items: center;
+    width: 144px;
+    height: 65px;
+    position: relative;
+    top: -193px;
+    left: 59px;
+    background-color: white;
+}
+
+.buttom_text {
+    display: block;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+.case_item:hover .buttom_text {
+    display: none;
+
+}
+
+.case_item:hover .case_item_img {
+    transform: scale(1.15);
+    transition: .5s;
+}
+
+.case_item:hover .buttom_case_item {
+    transform: scale(1.15);
+    transition: .5s;
+}
+
+.case_item:hover .hidden {
+    display: block;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 300;
+    text-decoration: underline;
+    color: rgba(133, 6, 6, 0.764);
+    transition: .5s;
 }
 
 .prelim {
     display: flex;
     justify-content: center;
-    /* margin-bottom: 60px; */
 }
 
 
 .prilim_cabinet {
-
     background-image: url(img/cabinetColomn.png);
     background-repeat: no-repeat;
     opacity: 0.8;
-    width: 1200px;
+    max-width: calc(var(--index)*150);
+    min-width: 740px;
     height: 79vh;
     background-position: center;
     background-size: contain;
+}
+
+@media (max-width: 500px) {
+    .prilim_cabinet {
+        display: none;
+    }
+}
+
+.loader {
+    transition: opacity 15s;
+}
+
+.loaded .loader {
+    opacity: 1;
+    transition: opacity 15s;
+}
+
+.loaded .main_header {
+    opacity: 1;
+    transition: opacity 1s;
+}
+
+.loaded .preloader_first {
+    opacity: 0;
+    transition: opacity 1s;
 }
