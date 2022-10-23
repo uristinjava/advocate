@@ -8,7 +8,6 @@
         'Lucida Grande', 'Lucida Sans Unicode',
         Geneva, Verdana, sans-serif;
     outline: none;
-
 }
 
 :root {
@@ -53,7 +52,6 @@
     color: rgba(216, 11, 11, 0.971);
     transform: scale(1.1);
     transition: .2s;
-
 }
 
 .main {
@@ -171,8 +169,6 @@
     display: none;
 }
 
-
-
 .case_item:hover .buttom_text {
     display: none;
 
@@ -203,7 +199,6 @@
     justify-content: center;
 }
 
-
 .prilim_cabinet {
     background-image: url(img/cabinetColomn.png);
     background-repeat: no-repeat;
@@ -230,6 +225,15 @@
     .promo_text {
         max-width: 250px;
     }
+
+    .promo_article {
+        margin-top: 20px;
+    }
+}
+
+
+.case {
+    margin-top: 20px;
 }
 
 .loader {
@@ -254,4 +258,9 @@
 .promo_box {
     display: flex;
     width: 600px;
+}
+
+.promo_article {
+    width: 250px;
+
 }
