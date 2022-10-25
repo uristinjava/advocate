@@ -1,27 +1,39 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular',
-        'Lucida Grande', 'Lucida Sans Unicode',
-        Geneva, Verdana, sans-serif;
-    outline: none;
-}
-
 .swiper {
-    max-width: 600px;
-    height: 400px;
+    max-width: 400px;
+    margin: 40px;
 }
 
-.buttom_case_item {
-    position: fixed;
-    width: 266px
+/* swiper-wrapper {
+    max-width: 400px;
+} */
+
+/* .swiper-scrollbar {
+    width: 300px;
+} */
+
+.text_slide {
+    position: absolute;
+    top: 166px;
+    left: 86px;
 }
 
-.link_text {
-    color: black;
-    opacity: 0.8;
-    font-weight: 300;
+.case_item_img {
+    display: block;
+    margin: auto
+}
+
+.swiper-button-prev {
+    opacity: 0.5;
+}
+
+.swiper-button-next {
+    opacity: 0.5
+}
+
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.swiper-button-next:hover {
+    opacity: 1;
 }

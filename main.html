@@ -8,6 +8,11 @@
     <title>advocate</title>
 
     <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+
+
+
     <script src="main.js" defer></script>
 
 
@@ -65,7 +70,7 @@
                 <h1 class="main_header">АдвокатЪ</h1>
             </div>
 
-            <div class="arrow loader  "><img src="img/arrow.png" width="50px" alt=""></div>
+            <div class="arrow loader  ">&#709;</div>
         </main>
 
         <div class="promo loader ">
@@ -103,7 +108,60 @@
 
             <div class="case_box">
 
-                <div class="case_item">
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+                                <!-- <h6 class="buttom_text">Дело: Иванов Р.Р. против всего мира</h6> -->
+                                <a href="#" class="text_slader">Дело Иванов Р.Р. против всего мира</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+
+                                <a href="#" class="text_slader">Дело Петров обоссал полицейского</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+
+                                <a href="#" class="text_slader">Дело Сидоров украл корову</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+
+                                <a href="#" class="text_slader">Дело Хояин коровы побил Сидорова </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+
+                                <a href="#" class="text_slader">Дело Философа который продавал наркотики </a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"> <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
+                            <div class="buttom_case_item">
+
+                                <a href="#" class="text_slader">Дело Клоуна без образования на телевидении </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+
+                    <div class="swiper-button-prev" style="color: black"></div>
+                    <div class="swiper-button-next" style="color: black"></div>
+                    <!-- If we need scrollbar -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+
+                <!-- <div class="case_item">
                     <img src="img/delo.jpg" class="case_item_img" width="250px" alt="">
                     <div class="buttom_case_item">
                         <h6 class="buttom_text">Дело: Иванов Р.Р. против всего мира</h6>
@@ -145,7 +203,7 @@
                         <h6 class="buttom_text">Дело: Иванов Р.Р. против всего мира</h6>
                         <a href="#" class="hid">Открыть дело Иванов Р.Р. против всего мира</a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
 
@@ -203,7 +261,37 @@
 
     </div>
 
+    <script src="package/swiper-bundle.js"></script>
 
+    <script>
+        'use strict';
+
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            slidesPerVew: 1,
+
+            loop: true,
+
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // And if we need scrollbar
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        });
+    </script>
 
 </body>
 
