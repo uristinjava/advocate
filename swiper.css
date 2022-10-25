@@ -1,0 +1,39 @@
+.swiper {
+    max-width: 400px;
+    margin: 40px;
+}
+
+/* swiper-wrapper {
+    max-width: 400px;
+} */
+
+/* .swiper-scrollbar {
+    width: 300px;
+} */
+
+.text_slide {
+    position: absolute;
+    top: 166px;
+    left: 86px;
+}
+
+.case_item_img {
+    display: block;
+    margin: auto
+}
+
+.swiper-button-prev {
+    opacity: 0.5;
+}
+
+.swiper-button-next {
+    opacity: 0.5
+}
+
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.swiper-button-next:hover {
+    opacity: 1;
+}

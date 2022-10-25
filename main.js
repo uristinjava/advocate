@@ -12,16 +12,11 @@ window.onload = function () {
 
 document.addEventListener('DOMContentLoaded', () => {
 
-
-
     const mainEl = document.querySelector('.main');
     const arrowEl = document.querySelector('.arrow');
     const promoTextEls = document.querySelectorAll('.promo_text');
     const callAnimation = document.querySelector('.call_buttom');
-
-    const wrapperEl = document.querySelector('.wrapper')
-
-
+    const wrapperEl = document.querySelector('.wrapper');
 
     /**функция исчезновения элемента если экран появляется на 1/3
      * 
