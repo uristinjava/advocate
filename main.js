@@ -76,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
         if ((wrapperEl.offsetHeight - window.scrollY) < 900) {
             callAnimation.classList.remove('call_animation')
         }
-
     });
 
 
