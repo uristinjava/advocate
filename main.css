@@ -30,8 +30,8 @@
     margin-top: 30px;
     max-width: 1200px;
     margin-bottom: 10px;
-
 }
+
 
 .nav {
     height: 80px;
@@ -79,8 +79,6 @@
     text-align: center;
 
 }
-
-
 
 .preloader_first {
     letter-spacing: 12px;
@@ -186,10 +184,7 @@
 
 }
 
-/* .case_item:hover .case_item_img {
-    transform: scale(1.15);
-    transition: .5s;
-} */
+
 
 .swiper-slide:hover .buttom_case_item {
     transform: scale(1.15);
@@ -219,11 +214,9 @@
     min-width: 740px;
     height: 75vh;
     background-position: center;
-    /* background-size: contain; */
     background-attachment: fixed;
     border-radius: 20px;
     border: 3px solid rgba(252, 246, 246, 0.651);
-
 }
 
 .case {
@@ -458,7 +451,32 @@
 
 }
 
+
+
 @media (max-width: 500px) {
+
+    .header {
+        padding: 2px;
+        width: 300px;
+    }
+
+    .tytle_menu {
+        padding: calc(var(--index)*.5);
+        display: block;
+    }
+
+    .main {
+        height: 41vh;
+        margin-top: 34px;
+    }
+
+    .main_header {
+        font-size: 31px;
+    }
+
+    .preloader_first {
+        font-size: 24px;
+    }
 
     .prilim_cabinet {
         display: none;
@@ -497,13 +515,18 @@
     .nav {
         padding-right: 20px;
         padding-left: 20px;
+
+        max-width: 300px;
+
+    }
+
+    .map_code {
+        margin-top: 20px;
+        margin-bottom: 40px;
     }
 
     .map_box {
         display: flex;
-    }
-
-    .map_box {
         flex-direction: column;
         align-items: center;
     }
@@ -513,6 +536,13 @@
         margin: 0px;
         justify-content: center;
     }
+
+    .footer {
+        display: none;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
 
 
 }
