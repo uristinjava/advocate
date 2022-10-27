@@ -22,14 +22,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 100vh;
 
+    min-height: 100vh;
 }
 
 .header {
     margin-top: 30px;
-    max-width: 1200px;
+    /* width: 1600px; */
     margin-bottom: 10px;
+    border-bottom: 2px solid rgba(216, 214, 214, 0.651);
 }
 
 
@@ -68,7 +69,7 @@
     height: 73vh;
     align-items: center;
     flex-direction: column;
-    margin-top: 132px;
+    margin-top: 71px;
     margin-bottom: 40px;
 }
 
@@ -466,7 +467,7 @@
     }
 
     .main {
-        height: 41vh;
+        height: 64vh;
         margin-top: 34px;
     }
 
@@ -535,13 +536,18 @@
         background: none;
         margin: 0px;
         justify-content: center;
+        width: 300px;
     }
 
-    .footer {
+    .map_code {
+        display: none;
+    }
+
+    /* .footer {
         display: none;
         margin-top: 20px;
         margin-bottom: 20px;
-    }
+    } */
 
 
 
