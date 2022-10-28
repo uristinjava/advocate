@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const promoTextEls = document.querySelectorAll('.promo_text');
     const callAnimation = document.querySelector('.call_buttom');
     const wrapperEl = document.querySelector('.wrapper');
+    const PravoEls = document.querySelectorAll('.pravo')
 
     /**функция исчезновения элемента если экран появляется на 1/3
      * 
@@ -42,18 +43,18 @@ document.addEventListener('DOMContentLoaded', () => {
      * @param {Коллекция элементов DOM} el 
      */
     const scrollAnimation = (el) => {
-        let windowCentr = window.innerHeight / 2 + window.scrollY;
+        let windowCentr = window.innerHeight / 1.5 + window.scrollY;
 
         el.forEach(el => {
-            let scrollOffset = el.offsetTop / 1.3 + (el.offsetHeight);
+            let scrollOffset = el.offsetTop / 1.4 + (el.offsetHeight);
             if (windowCentr >= scrollOffset) {
                 el.classList.add('animation_class');
-            } else {
-                el.classList.remove('animation_class');
-            };
+            }
+
         });
 
     };
+
 
     const animationCallBtn = () => {
         let scrollTop = window.scrollY;
@@ -67,16 +68,19 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-
+    //
     window.addEventListener('scroll', () => {
         removeElement(mainEl, arrowEl);
         scrollAnimation(promoTextEls);
-        animationCallBtn()
+        animationCallBtn();
+        scrollAnimation(PravoEls)
 
         if ((wrapperEl.offsetHeight - window.scrollY) < 900) {
             callAnimation.classList.remove('call_animation')
         }
+
+        //вызываем функцию анимирования блоков про специализацию
+
+
     });
-
-
 });
