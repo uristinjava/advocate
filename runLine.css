@@ -28,6 +28,11 @@
     color: black;
 }
 
+.link_gop:hover {
+    transform: scale(1.1);
+    transition: .2s;
+}
+
 .firmo {
     text-align: right;
 }
