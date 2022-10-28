@@ -1,0 +1,37 @@
+.runLine {
+    background-color: rgba(220, 219, 219, 0.718);
+    padding: 10px 40px 10px 40px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: 2px colid black;
+}
+
+.runLine_box {
+    display: flex;
+    align-items: center;
+}
+
+.gop {
+    display: flex;
+    padding-right: 40px;
+    opacity: .8;
+}
+
+.gop_pic {
+    display: block;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.link_gop {
+    text-decoration: none;
+    color: black;
+}
+
+.firmo {
+    text-align: right;
+}
+
+.gop_text {
+    color: black;
+}

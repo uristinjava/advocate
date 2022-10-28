@@ -78,7 +78,6 @@
     font-size: calc(var(--index)*3);
     font-weight: 300;
     text-align: center;
-
 }
 
 .preloader_first {
@@ -143,6 +142,7 @@
     letter-spacing: 3px;
     font-weight: 300;
     margin-top: 30px;
+    opacity: .8;
 }
 
 .case_box {
@@ -184,8 +184,6 @@
     display: none;
 
 }
-
-
 
 .swiper-slide:hover .buttom_case_item {
     transform: scale(1.15);
@@ -234,8 +232,8 @@
 }
 
 .loaded .main_header {
-    opacity: .8;
     transition: opacity .5s;
+    opacity: .6;
 }
 
 .loaded .preloader_first {
@@ -255,8 +253,6 @@
 .one {
     animation: arrowDown 2s infinite;
 }
-
-
 
 @keyframes arrowDown {
     0% {
@@ -287,9 +283,7 @@
 .promo_photo {
     opacity: 0.8;
     border-radius: 0 0 50% 50%;
-
 }
-
 
 .fixed {
     display: flex;
@@ -313,9 +307,19 @@
     font-weight: 300px;
 }
 
+.promo_text.animation_class:nth-child(n+2) {
+    transition-delay: .5s;
+    transition-delay: .5s;
+}
+
+.promo_text.animation_class:nth-child(n+3) {
+    transition-delay: 1s;
+    transition-delay: 1s;
+}
+
 .promo_text {
     opacity: 0;
-    transform: translateY(70px);
+    transform: translateY(150px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
     margin-top: 13px;
     font-weight: 300px;
@@ -390,7 +394,6 @@
     display: flex;
     justify-content: flex-end;
     border: 4px solid rgba(252, 246, 246, 0.651);
-
 }
 
 .form_header {
@@ -416,8 +419,6 @@
     border-radius: 10px;
     padding: 6px;
     outline: none;
-
-
 }
 
 .input_text {
@@ -442,14 +443,26 @@
 .buttom_form:hover {
     background-color: rgba(255, 254, 254, 0.86);
     border: 1px solid rgba(220, 219, 219, 0.83);
-
-
-
 }
 
 .map_code {
     border: 2px solid rgba(252, 246, 246, 0.651);
+}
 
+span.swiper-pagination-bullet-active {
+    opacity: 0.8;
+    background-color: rgba(102, 100, 100, 0.83);
+}
+
+@media (max-width:780px) {
+    .contact_form {
+        max-width: 365px;
+        background: none;
+    }
+
+    .form_header {
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -460,6 +473,8 @@
         padding: 2px;
         width: 300px;
     }
+
+
 
     .tytle_menu {
         padding: calc(var(--index)*.5);
@@ -473,10 +488,11 @@
 
     .main_header {
         font-size: 31px;
+        opacity: 0.6;
     }
 
     .preloader_first {
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .prilim_cabinet {
@@ -500,7 +516,6 @@
 
     .case_box {
         width: 300px;
-
     }
 
     .buttom_case_item {
@@ -516,9 +531,7 @@
     .nav {
         padding-right: 20px;
         padding-left: 20px;
-
         max-width: 300px;
-
     }
 
     .map_code {
@@ -542,13 +555,5 @@
     .map_code {
         display: none;
     }
-
-    /* .footer {
-        display: none;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    } */
-
-
 
 }

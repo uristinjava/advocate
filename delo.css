@@ -37,16 +37,46 @@
     display: flex;
     justify-content: space-evenly;
     max-width: 1000px;
+    padding: 0px 15px 0px 15px;
 }
 
 .pravo {
-    margin: 30px 10px 30px 10px;
+    opacity: 0;
+    margin: 30px 5px 30px 5px;
     width: 300px;
     border: 3px solid rgba(252, 246, 246, 0.651);
     border-radius: 10px;
     padding-right: 6px;
-    box-shadow: 0px 5px 10px 0px rgba(252, 246, 246, 0.651)
+    box-shadow: 0px 5px 10px 0px rgba(252, 246, 246, 0.651);
+    transform: translateY(70px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
+
+.pravo.animation_class {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-weight: 300px;
+}
+
+.pravo.animation_class:nth-child(n+2) {
+    transition-delay: .5s;
+    transition-delay: .5s;
+}
+
+.pravo.animation_class:nth-child(n+3) {
+    transition-delay: 1s;
+    transition-delay: 1s;
+}
+
+.pravo.animation_class:nth-child(n+4) {
+    transition-delay: 1.5s;
+    transition-delay: 1.5s;
+}
+
+
+
+
 
 .header_service {
     margin-top: 30px;
