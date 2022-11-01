@@ -25,6 +25,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: rgba(220, 219, 219, 0.718);
+    min-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .text {
@@ -38,9 +42,11 @@
     justify-content: space-evenly;
     max-width: 1000px;
     padding: 0px 15px 0px 15px;
+    align-items: flex-end;
 }
 
 .pravo {
+    background-color: white;
     opacity: 0;
     margin: 30px 5px 30px 5px;
     width: 300px;
@@ -140,6 +146,7 @@
 @media (max-width: 800px) {
     .service_block {
         flex-wrap: wrap;
+        align-items: normal;
     }
 
     .header_service {
