@@ -119,6 +119,7 @@
 .shelf_books_link {
     opacity: 0.8;
     display: block;
+    border-radius: 5px;
 }
 
 .shelf_books_link:hover {
@@ -144,6 +145,8 @@
     margin-top: 30px;
     opacity: .8;
 }
+
+
 
 .case_box {
     display: block;
@@ -243,9 +246,7 @@
 
 .arrow {
     color: black;
-
     font-size: 80px;
-    width: 50px;
     position: absolute;
     bottom: 30px;
 }
@@ -471,14 +472,7 @@ span.swiper-pagination-bullet-active {
 
     .header {
         padding: 2px;
-        width: 300px;
-    }
-
-
-
-    .tytle_menu {
-        padding: calc(var(--index)*.5);
-        display: block;
+        /* width: 300px; */
     }
 
     .main {
@@ -528,11 +522,11 @@ span.swiper-pagination-bullet-active {
         top: 158px;
     }
 
-    .nav {
+    /* .nav {
         padding-right: 20px;
         padding-left: 20px;
         max-width: 300px;
-    }
+    } */
 
     .map_code {
         margin-top: 20px;
@@ -552,8 +546,8 @@ span.swiper-pagination-bullet-active {
         width: 300px;
     }
 
-    .map_code {
+    /* .map_code {
         display: none;
-    }
+    } */
 
 }

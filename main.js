@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
+
     const animationCallBtn = () => {
         let scrollTop = window.scrollY;
         let mainCentr = mainEl.offsetHeight;
