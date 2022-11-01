@@ -17,7 +17,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const promoTextEls = document.querySelectorAll('.promo_text');
     const callAnimation = document.querySelector('.call_buttom');
     const wrapperEl = document.querySelector('.wrapper');
-    const PravoEls = document.querySelectorAll('.pravo')
+    const PravoEls = document.querySelectorAll('.pravo');
+
 
     /**функция исчезновения элемента если экран появляется на 1/3
      * 
@@ -69,19 +70,17 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
 
-    //
+    //событие на прокрутку по сайту 
+    //добавляем анимацию при скроле
     window.addEventListener('scroll', () => {
         removeElement(mainEl, arrowEl);
         scrollAnimation(promoTextEls);
+        scrollAnimation(PravoEls);
         animationCallBtn();
-        scrollAnimation(PravoEls)
 
-        if ((wrapperEl.offsetHeight - window.scrollY) < 900) {
+        if ((wrapperEl.offsetHeight - window.scrollY) < 1100) {
             callAnimation.classList.remove('call_animation')
         }
-
-        //вызываем функцию анимирования блоков про специализацию
-
-
     });
+
 });
