@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular',
+        'Lucida Grande', 'Lucida Sans Unicode',
+        Geneva, Verdana, sans-serif;
+    outline: none;
+}
+
+body ._lock {
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+    font-family: inherit;
+    color: black;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    border-bottom: 2px solid black;
+    height: 100px;
+    display: flex;
+}
+
+
+
+.nav {
+    position: fixed;
+    top: 0;
+    background-color: rgb(34, 34, 34);
+    opacity: .9;
+    min-width: 100vw;
+    min-height: 100vh;
+    left: -140%;
+    transition: left 0.3s ease 0s;
+}
+
+.nav.visible {
+    z-index: 5;
+    left: 0;
+}
+
+.nav_menu {
+    padding: 26px;
+    margin-top: 32px;
+}
+
+.tytle_menu {
+    margin-top: 40px;
+    transition: transform .2s;
+}
+
+.tytle_menu:hover .text_navigator {
+    color: aqua;
+    text-shadow: 12;
+}
+
+.menu_icone {
+    z-index: 50;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    width: 28px;
+    height: 17px;
+    top: 50%;
+    left: 40px;
+}
+
+.menu_icone span,
+.menu_icone::before,
+.menu_icone::after {
+    left: 0;
+    position: absolute;
+    height: 10%;
+    width: 100%;
+    transition: all 0.3sec ease 0.5s;
+    background-color: rgb(12, 12, 12);
+}
+
+.menu_icone::before,
+.menu_icone::after {
+    content: '';
+}
+
+.menu_icone::before {
+    top: 0;
+}
+
+.menu_icone span {
+    top: 50%;
+    transform: scale(1) translate(0px -50%);
+}
+
+.menu_icone::after {
+    bottom: -3px;
+}
+
+.menu_icone.visible span {
+    transform: scale(0) translate(0px, -50%);
+    transition: 0.5s;
+
+}
+
+.menu_icone.visible::before {
+    background-color: white;
+    top: 50%;
+    transform: rotate(-45deg) translate(0px, -50%);
+    transition: 0.5s;
+}
+
+.menu_icone.visible::after {
+    background-color: white;
+    bottom: 50%;
+    transform: rotate(45deg) translate(0px, 50%);
+    transition: 0.5s;
+}
+
+
+.text_navigator {
+    font-weight: 600;
+    color: white;
+    font-size: 34px;
+    padding-left: auto;
+    text-transform: uppercase;
+}
+
+.main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.main_text {
+    text-align: center;
+}
+
+.shelf_books {
+    display: flex;
+    align-items: flex-end;
+    opacity: .7;
+}
+
+.shelf_books_link {
+    display: block;
+}
